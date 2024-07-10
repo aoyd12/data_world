@@ -58,7 +58,7 @@
               //ポップアップで人口を表示
               .bindPopup(
                 (layer) =>
-                  '市区町村名: ' + layers.feature.properties['A16_003'] +
+                  '市区町村名: ' + layer.feature.properties['A16_003'] +
                   '<br />' +
                   '人口: ' + layer.feature.properties['A16_005'],
                 ) 
