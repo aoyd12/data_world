@@ -42,7 +42,7 @@
        map.attributionControl.addAttribution(
           '<a href = "https://nlftp.mlit.go.jp/ksj/gml/datalist/LsjTmplt-A16-v2_3.html">国土数値情報 - 人口集中地区データ</a>',
        );
-       fetch('./A16-20_13DID.geojson')//人口集中地区データ
+       fetch('./A16-20_13_DID.geojson')//人口集中地区データ
          .then((res) => res.json())
          .then((json) => {
             const polygon = L.geoJSON(json, {
