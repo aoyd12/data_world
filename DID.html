@@ -50,15 +50,15 @@
                 color: 'red',
                 stroke: false,
                 fillOpacity:
-                  feature.properties['人口']/
-                  feature.properties['面積']/
+                  feature.properties['A16_005']/
+                  feature.properties['A16_006']/
                   20000,
                 }),
                })
               //ポップアップで人口を表示
               .bindPopup(
                 (layer) =>
-                  '人口: ' + layer.feature.properties['人口'],
+                  '人口: ' + layer.feature.properties['A16_005'],
                 )
               .addTo(map);
            //レイヤーに追加
