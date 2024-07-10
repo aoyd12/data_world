@@ -58,9 +58,9 @@
               //ポップアップで人口を表示
               .bindPopup(
                 (layer) =>
-                  '市区町村名: ' + layers.feature.properties['A16_003'],
+                  '市区町村名: ' + layers.feature.properties['A16_003'] +
                   '人口: ' + layer.feature.properties['A16_005'],
-                )
+                ) 
               .addTo(map);
            //レイヤーに追加
            layersControl.addOverlay(polygon, '人口集中地区');
